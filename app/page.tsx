@@ -10,7 +10,7 @@ export default function Home() {
 
   const fetchAppointments = async () => {
     try {
-      const response = await axios.get("http://localhost:8080/appointments/get-appointments");
+      const response = await axios.get("https://spa-booking-backend-doxl.onrender.com/appointments/get-appointments");
       setAppointments(response.data);
     } catch (error) {
       console.error("Error fetching appointments:", error);

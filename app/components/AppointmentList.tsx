@@ -57,7 +57,7 @@ const AppointmentList = ({
   // Delete appointment
   const handleDelete = async () => {
     try {
-      await axios.post("http://localhost:8080/appointments/cancel", {
+      await axios.post("https://spa-booking-backend-doxl.onrender.com/appointments/cancel", {
         phone: selectedAppointmentId,
       });
       // alert("Appointment deleted!");
@@ -73,7 +73,7 @@ const AppointmentList = ({
   const handleEdit = async () => {
     try {
       const { name, phone, service, time, date, notes } = selectedAppointment;
-      await axios.post("http://localhost:8080/appointments/modify", {
+      await axios.post("https://spa-booking-backend-doxl.onrender.com/appointments/modify", {
         id: selectedAppointmentId,
         name,
         phone,

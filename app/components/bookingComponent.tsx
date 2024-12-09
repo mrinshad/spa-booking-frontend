@@ -21,7 +21,7 @@ const BookingForm = ({
 
     try {
       const response = await axios.post(
-        "http://localhost:8080/appointments/book", // Correct route path
+        "https://spa-booking-backend-doxl.onrender.com/appointments/book", // Correct route path
         {
           name,
           phone,
