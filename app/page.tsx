@@ -26,7 +26,7 @@ export default function Home() {
     <div>
       <div>
       <BookingForm fetchAppointments={fetchAppointments} />
-      <AppointmentList appointments={appointments} />
+      <AppointmentList appointments={appointments} fetchAppointments={fetchAppointments} />
     </div>
     </div>
   );
